@@ -56,13 +56,13 @@ section{
     margin: 0 auto;
     padding: 15px;
 }
-.collectionsTitle{
-    font-size: 4.12rem;
+.collectionsTitle, .InfoTitle{
+    font-size: 450%;
     color: black;
     text-transform: uppercase;
     font-weight: 400;
-    padding-top: 20px;
-    padding-left: 40px;
+    margin-bottom: 30px;
+    margin-left: 50px;
 }
 .collectionsList{
     list-style: none;
@@ -83,15 +83,55 @@ section{
 }
 .info{
     display: flex;
-    justify-content: space-between;
-    padding: 100px;
+    /* justify-content: space-between; */
+    padding: 40px;
+    background: #D3D3D3;
+    color: black;
+    flex-wrap: wrap;
 }
 .info > h2{
     font-size: 450%;
     margin-left: 30px;
-    font-weight: 400;
     text-transform: uppercase;
-    border: solid black;
+}
+.InfoTitle2{
+    font-size: 450%;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+.info > p{
+    width: 5ch;
+    font-size: 150%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.block {
+    background: red;
+    width: 400px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.footer {
+    height: 60px;
+    position: relative;
+    align-items: center;
+    background-color: black;
+}
+.footerButton {
+    position: absolute;
+    width: 3%;
+    margin-left: 830px;
+    border: 0;
+}
+.footerButton2 {
+    position: absolute;
+    width: 3%;
+    margin-top: 10px;
+    margin-left: 700px;
+    border: 0;
 }
 @media screen and (max-width: 1000px) {
     .headerTitle{

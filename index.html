@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="zxx">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,13 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Website</title>
+    <script src="app.js" defer></script>
+    <title>Landingspage</title>
 </head>
-<body>
+<body id="js--body">
     <header class ="header">
         <h1 class ="headerTitle">Katten Galerij</h1>
-        <button class="headerButton">menu</button>
+        <button id="js--menu" class="headerButton">menu</button>
     </header>
+    <nav id="js--navigation" class="mainNav">
+        <ul class="mainNavList">
+            <li class="mainNavListItem">
+                <a href="">Home</a>
+            </li>
+            <li class="mainNavListItem">
+                <a href="">Collection #1</a>
+            </li>
+            <li class="mainNavListItem">
+                <a href="">Collection #2</a>
+            </li>
+            <li class="mainNavListItem">
+                <a href="">Collection #3</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <figure class="bigFigure">
             <img src="IMG/cabbit.webp" alt="cabbit">

@@ -32,12 +32,47 @@ body{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 150%;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
     letter-spacing: 2px;
+}
+.headerButton:hover{
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+.mainNav{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s ease;
+}
+.mainNavList {
+    list-style: none;
+}
+.mainNavListItem {
+    color: white;
+    font-size: 200%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mainNavListItem > a {
+    color: white;
+    text-decoration: none;
 }
 .bigFigure{
     width: 100%;
@@ -62,7 +97,7 @@ section{
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 30px;
-    margin-left: 50px;
+    margin-left: 50px; 
 }
 .collectionsList{
     list-style: none;
@@ -109,7 +144,6 @@ section{
     margin-top: 20px;
 }
 .block {
-    background: red;
     width: 400px;
     flex-shrink: 1;
     flex-grow: 1;

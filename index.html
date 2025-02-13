@@ -85,25 +85,20 @@
                 Dolorem, quia et! Ipsa soluta quos et mollitia, iste aliquam maiores vitae totam quae dicta quia id nisi aspernatur laboriosam ratione reiciendis culpa repellat, quaerat iusto explicabo laborum ipsam sint.</p>
             </div>
         </section>
-        <form action="https://api.web3forms.com/submit" method="POST">
-
-            <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <section>
+        <h2 class="contactTitle">Contact</h2>
+        <form action="" method="POST">
+            
+            <input type="text" name="name" required placeholder="Your name...">
+            <input type="email" name="email" required placeholder="Your email...">
+            <textarea name="message" required placeholder="Your message here..."></textarea>
         
-            <!-- Form Inputs. Each input must have a name="" attribute -->
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
-            <textarea name="message" required></textarea>
-        
-            <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        
-            <!-- Custom Confirmation / Success Page -->
-            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
         
             <button type="submit">Submit</button>
         
         </form>
+    </section>
         <footer>
             <div>
                 <button class="footerButton">
@@ -117,20 +112,6 @@
                     <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
             </button>
         </footer>
-        <form method="POST" id="form">
-
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-        
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
-            <textarea name="message" required></textarea>
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        
-            <button type="submit">Submit</button>
-        
-            <div id="result"></div>
-        
-        </form>
     </main>
 </body>
 </html>

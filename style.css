@@ -12,6 +12,11 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
 .header{
     background-color: #333;
     display: flex;
@@ -260,14 +265,23 @@ section{
     flex-shrink: 1;
     flex-grow: 1;
 }
-
+/* CONTACT FORM */
+.contactTitle {
+    font-size: 450%;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 67.2rem;
+}
 form {
     max-width: 500px;
     margin: 40px auto;
     padding: 20px;
-    background: #f9f9f9;
+    background: #ccc;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 input, textarea {
@@ -300,7 +314,7 @@ button {
 button:hover {
     background: #555;
 }
-
+/* End contact form */
   
 .footer {
     height: 60px;

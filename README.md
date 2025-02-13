@@ -1,3 +1,2 @@
 ## Landingspage
-
-Gebleven bij ??
+Hoi

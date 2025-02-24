@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding:0;
     margin:0;
-    font-size: 16px;
 }
 
 body{
@@ -17,64 +16,69 @@ html {
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+
 .header{
     background-color: #333;
     display: flex;
     color: #fff;
-    padding: 10px 0;
-    height: 60px;
+    padding: 1rem 0;
+    height: 6rem;
     justify-content: space-between;
     align-items: center;
-    padding: 35px;
-    padding-bottom: 40px;
+    padding: 3.5rem;
+    padding-bottom: 4rem;
 }
 .headerTitle{
     color:white;
-    font-size: 350%;
+    font-size: 4.2rem;
     font-weight: 600;
 }
 
 #js--menu {
+    left: 75rem;
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 0.5rem;
+    right: 2rem;
     background: transparent;
     color: white;
-    padding: 10px;
+    padding: 2rem;
     border: none;
-    border-radius: 5px;
-    font-size: 150%;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     z-index: 1000; 
+    user-select:none;
 }
 
 #js--menu:hover {
-    background: #fff;
     color: #333;
     cursor: pointer;
+    user-select:none;
 }
 
 #js--close {
+    user-select:none;
+    left: 75rem;
     position: absolute;
-    top: 15px;
-    right: 20px;
-    background: transparent;
+    top: 1.5rem;
+    right: 2rem;
+    background: none;
     color: white;
-    padding: 10px;
+    padding: 1rem;
     border: none;
-    border-radius: 5px;
-    font-size: 150%;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,32 +90,31 @@ html {
 .headerButton{
     background: transparent;
     color: white;
-    padding: 10px;
+    padding: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-size: 150%;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
 .headerButton svg {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
 }
 .headerButton:hover{
-    background: #fff;
     color: #333;
     cursor: pointer;
 }
 .hidden {
     display: none;
 }
-/* Main Navigation - Hidden by default */
+
 .mainNav{
     color: white;
     position: absolute;
@@ -145,7 +148,7 @@ html {
     color: white;
     font-size: 200%;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 .mainNavListItem > a {
     color: white;
@@ -155,18 +158,18 @@ html {
 /* Close Button for Navigation */
 .hamburgerCloseButton {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    top: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
     background-color: #fff;
-    border: 2px solid #333;
+    border: 0.2rem solid #333;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #333;
-    font-size: 24px;
+    font-size: 2.4rem;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s ease, opacity 0.3s ease;
@@ -197,29 +200,33 @@ section{
 .collections{
     width: 99vw;
     margin: 0 auto;
-    padding: 15px;
+    padding: 1.5rem;
 }
 
 .collectionsTitle, .InfoTitle{
-    font-size: 450%;
+    font-size: 5rem;
     color: black;
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom: 30px;
-    margin-left: 50px; 
+    margin-bottom: 3rem;
+    margin-left: 5rem; 
+}
+
+.block > p {
+    font-size: 1.6rem;
 }
 
 .collectionsList{
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 4rem;
     flex-wrap: wrap;
     justify-content: center; 
 }
 
 .collectionsItem{
-    width: 500px;
-    height: 700px;
+    width: 50rem;
+    height: 70rem;
     background: black;
     flex-shrink: 0;
 }
@@ -231,7 +238,7 @@ section{
 
 .info{
     display: flex;
-    padding: 40px;
+    padding: 4rem;
     background: #D3D3D3;
     color: black;
     flex-wrap: wrap;
@@ -239,7 +246,7 @@ section{
 
 .info > h2{
     font-size: 450%;
-    margin-left: 30px;
+    margin-left: 3rem;
     text-transform: uppercase;
 }
 
@@ -248,22 +255,40 @@ section{
     color: black;
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom: 30px;
-    margin-left: 50px;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
 }
 
 .info > p{
     width: 5ch;
     font-size: 150%;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 3rem;
+    margin-top: 2rem;
 }
 
 .block {
-    margin-left: 20px;
-    width: 400px;
+    margin-left: 2rem;
+    width: 40rem;
     flex-shrink: 1;
     flex-grow: 1;
+}
+
+/* FORM HTML */
+.ph1 {
+    text-align: center;
+    font-size: 2rem;
+    max-width: 50rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+.pform {
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-left: 63rem;
+    padding: 3rem;
 }
 /* CONTACT FORM */
 .contactTitle {
@@ -273,40 +298,40 @@ section{
     font-weight: 400;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 67.2rem;
+    margin-left: 74rem;
 }
 form {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 50rem;
+    margin: 4rem auto;
+    padding: 2rem;
     background: #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 input, textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 textarea {
-    min-height: 120px;
+    min-height: 12rem;
     resize: vertical;
 }
 
 button {
     width: 100%;
-    padding: 12px;
+    padding: 1.2rem;
     background: #333;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -317,7 +342,7 @@ button:hover {
 /* End contact form */
   
 .footer {
-    height: 60px;
+    height: 6rem;
     position: relative;
     align-items: center;
     background: white;
@@ -326,8 +351,8 @@ button:hover {
 .footerButton {
     position: absolute;
     width: 3%;
-    margin-left: 900px;
-    margin-top: 10px;
+    margin-left: 90rem;
+    margin-top: 1rem;
     background: white;
     border: 0;
 }
@@ -335,8 +360,8 @@ button:hover {
 .footerButton2 {
     position: absolute;
     width: 3%;
-    margin-top: 10px;
-    margin-left: 700px;
+    margin-top: 1rem;
+    margin-left: 70rem;
     border: 0
 }
 
@@ -367,6 +392,6 @@ button:hover {
         font-size: 200%;
     }
     .collectionsTitle{
-        padding-left: 15px;
+        padding-left: 1.5rem;
     }
 }
